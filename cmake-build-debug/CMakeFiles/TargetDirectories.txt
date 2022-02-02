@@ -1,0 +1,6 @@
+C:/Users/User/CLionProjects/laba5b/cmake-build-debug/CMakeFiles/laba5b.dir
+C:/Users/User/CLionProjects/laba5b/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/User/CLionProjects/laba5b/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/User/CLionProjects/laba5b/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
+C:/Users/User/CLionProjects/laba5b/cmake-build-debug/libs/CMakeFiles/libs.dir
+C:/Users/User/CLionProjects/laba5b/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
