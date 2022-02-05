@@ -1,15 +1,22 @@
 #include "libs/vector.h"
 #include <stdio.h>
 #include <stdint.h>
+#include "assert.h"
+
+void test_popBack_notEmptyVector() {
+    vector v = createVector(0);
+    pushBack(&v, 10);
+
+    assert(v.size == 1);
+
+    popBack(&v);
+    assert(v.size == 0);
+    assert(v.capacity == 1);
+}
 
 int main() {
-    vector v = createVector(5);
-
-    printf("%lld\n", v.size);
-
-    clear(&v);
-
-    printf("%lld", v.size);
+    test_popBack_notEmptyVector();
 
     return 0;
 }
+

@@ -40,3 +40,31 @@ void shrinkToFit(vector *v) {
 void deleteVector(vector *v) {
     free(v);
 }
+
+bool isEmpty(vector *v) {
+    return v->size == 0;
+}
+
+bool isFull(vector *v) {
+    return v->capacity == v->size;
+}
+
+int getVectorValue(vector *v, size_t i) {
+    return v->data[i - 1];
+}
+
+void pushBack(vector *v, int x) {
+    if (v->capacity != 0 && isFull(v))
+        reserve(v, v->capacity * 2);
+    else if (v->capacity == 0)
+        v->capacity = 1;
+    v->data[v->size] = x;
+    v->size++;
+}
+
+void popBack(vector *v) {
+    if (isEmpty(v))
+        printf("1");
+    else
+        (v->size)--;
+}
