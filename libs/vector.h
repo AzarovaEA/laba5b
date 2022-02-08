@@ -52,12 +52,12 @@ void popBack(vector *v);
 // При попытке получить доступ вне пределов используемых
 // элементов вектора v, в поток ошибок выводится
 // строка: "IndexError: a[index] is not exists"
-int* atVector(vector *v, size_t index);
+int *atVector(vector *v, size_t index);
 
 // возвращает указатель на последний элемент вектора v
-int* back(vector *v);
+int *back(vector *v);
 
 // возвращает указатель на нулевой элемент вектора v
-int* front(vector *v);
+int *front(vector *v);
 
 #endif //LABA5B_VECTOR_H

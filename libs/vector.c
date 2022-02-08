@@ -69,20 +69,20 @@ void popBack(vector *v) {
         (v->size)--;
 }
 
-int* atVector(vector *v, size_t index) {
-    if (v->size > index && index >=0)
+int *atVector(vector *v, size_t index) {
+    if (v->size > index && index >= 0)
         return &v->data[index];
     else
         printf("IndexError: a[%lld] is not exists", index);
     return NULL;
 }
 
-int* back(vector *v) {
-    return isEmpty(v) ? NULL :  &v->data[v->size - 1];
+int *back(vector *v) {
+    return isEmpty(v) ? NULL : &v->data[v->size - 1];
 }
 
-int* front(vector *v) {
-    return isEmpty(v) ? NULL :  &v->data[0];
+int *front(vector *v) {
+    return isEmpty(v) ? NULL : &v->data[0];
 }
 
 
